@@ -1,11 +1,11 @@
 public class BmiService {
-    public long bodyMassIndex(double a, long b) {
+    public long bodyMassIndex(double height, long weight) {
         double result;
-        double index = a*a; //exponentiation
-        //double a1 = 2; //extent
-        //double index = Math.pow(a, a1); //exponentiation
+        double index = height * height;
+        //double extent = 2;
+        //double index = Math.pow(height, extent);
 
-        result = b / index; //body mass index formula
+        result = weight / index;
 
         return (long) result;
     }
