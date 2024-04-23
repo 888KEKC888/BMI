@@ -1,5 +1,5 @@
 public class BmiService {
-    public long bodyMassIndex(double height, long weight) {
+    public int bodyMassIndex(double height, int weight) {
         double result;
         double index = height * height;
         //double extent = 2;
@@ -7,6 +7,6 @@ public class BmiService {
 
         result = weight / index;
 
-        return (long) result;
+        return (int) result;
     }
 }
